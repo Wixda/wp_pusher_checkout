@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    margin: 0 auto;
+    max-width: 94%;
+    border-bottom: 2px solid hsla(204, 18%, 90%, 1);
+}
+
+header a {
+    display: block;
+}
+
+header #logo{
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color:hsla(211, 35%, 17%, 1);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+nav a:hover {
+    color: hsla(211, 35%, 47%, 1);
+}
+
+nav a.bordered-link {
+    border: 2px solid hsla(211, 35%, 17%, 1);
+    border-radius: 5px;
+}
+
+nav .bordered-link:hover {
+    border-color: hsla(211, 35%, 47%, 1);
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 892px;
+    margin: 80px auto;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
+}
+
+main .main-wrapper {
+    flex: 2;
+}
+
+
+.main-wrapper .heading{
+    color: #1D2C3C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: -32px;
+    margin-bottom: 32px;
+    padding: 40px 48px 40px;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.03);
+}
+
+.main-wrapper form fieldset {
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.03);
+    padding: 0 40px 40px;
+    margin-bottom: 32px;
+}
+
+.main-wrapper form legend{
+    color: hsla(211, 35%, 17%, 1);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.16px;
+    margin-bottom: 24px;
+}
+
+.main-wrapper form legend.basic-info {
+    margin-bottom: 8px;
+}
+
+.main-wrapper form .rounded-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(210, 54%, 53%);
+    border-radius: 50%;
+    color: hsl(210, 54%, 53%);
+    background: none;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.main-wrapper form .personal-fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form label {
+    font-size: 14px;
+    color: hsla(211, 35%, 17%, 1);
+    font-weight: 400;
+}
+
+input {
+    border: none;
+    font-size: 14px;
+    padding: 12px;
+    height: 36px;
+    margin: 8px 0;
+    background-color: #f2f2f2;
+}
+
+.main-wrapper form .personal-fields input {
+    border-radius: 5px;
+    width: 216px;
+}
+
+.main-wrapper form .personal-fields input#email {
+    width: 320px;
+}
+
+
+.main-wrapper form .credit-card-fields .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper form .credit-card-fields .input-wrapper #card_number {
+    flex-grow: 1;
+}
+
+.main-wrapper form .credit-card-fields .input-wrapper #expiry_date {
+    width: 72px;
+    flex-grow: 0;
+}
+
+.main-wrapper form .credit-card-fields .input-wrapper #cvc {
+    width: 64px;
+    flex-grow: 0;
+}
+
+.main-wrapper form .center-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 48px;
+}
+
+.main-wrapper form button {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 1);
+    background: hsla(173, 96%, 28%, 1);
+    height: 48px;
+    width: 480px;
+    cursor: pointer;
+}
+
+.main-wrapper form button:hover {
+    background: hsla(173, 96%, 18%, 1);
+}
+
+.main-wrapper .support {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 324px;
+    margin: 24px auto;
+}
+
+.main-wrapper .stripe {
+    display: block;
+    width: 92px;
+    height: 20px;
+    margin: 0 auto 16px;
+}
+
+main aside {
+    background-color: hsla(204, 84%, 41%, 1);
+    color: hsla(204, 0%, 100%, 1);
+    flex: 1;
+    padding: 48px;
+    border-radius: 0 8px 8px 0;
+}
+
+main aside h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+aside p.plan {
+    line-height: 0.6;
+    display: flex;
+    align-items: baseline;
+    margin: 25px 0;
+
+}
+
+.italic {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+aside ul li p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    line-height: 24px;
+    opacity: 0.999;
+}
+
+.bold {
+    font-weight: 700;
+    opacity: 1;
+}
+
+aside i {
+    font-size: 20px;
+    vertical-align: middle;
+    background: none;
+    color: hsla(204, 0%, 100%, 0.9);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+aside p.plan .currency {
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+aside p.plan .amount{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+aside p.plan .interval {
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+aside .question {
+    margin: 24px 0 18px;
+}
+
+aside hr {
+    margin: 42px 0;
+    opacity: 0.5;
+}
+
+aside .quote {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+aside .author-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 18px 0 96px;
+}
+
+aside .quote .author-details img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

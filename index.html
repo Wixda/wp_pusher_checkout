@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher</title>
+    <script src="https://kit.fontawesome.com/81a672ffe4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header starts here -->
+    <header role="banner">
+        <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="Company name logo" id="logo">
+        </a>
+        <!-- Nav starts here -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#" class="bordered-link">Account</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Main starts here -->
+    <main>
+        <!-- aside starts here -->
+        <aside>
+            <h2>Freelancer</h2>
+                <p class="plan">
+                    <span class="currency">$</span> <span class="amount">99</span> <span class="interval">/ year</span>
+                </p>
+                <p class="italic">Automatically renews <br> after 1 year</p>
+                <ul>
+                    <li>
+                        <p><span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                        Use on <span class="bold">5</span> client sites</p>
+                    </li>
+                    <li>
+                        <p><span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                        Private repositories</p>
+                    </li>
+                    <li>
+                        <p><span class="checkmark"><i class="fa-regular fa-circle-check"></i></span>
+                        Email support</p>
+                    </li>
+                </ul>
+                <div>
+                    <p class="question">Need <span class="bold">20</span> client sites?</p>
+                    <p class="bold">Switch to the Agency plan.</p>
+                </div>
+                    <hr>
+                <div class="quote">
+                    <p>FTP is horrible to deal with. <span class="bold">WP Pusher</span> solves that issue, and the
+                    customer support is awesome!</p>
+                    <div class="author-details">
+                        <img src="./images/author.svg" alt="Author's Image">
+                        <p class="author-name bold">Kirk Beard</p>
+                    </div>
+                </div>
+        </aside>
+
+        <!-- aside ends here -->
+
+         <!-- main contents starts here -->
+        <div class="main-wrapper">
+            <h2 class="heading">Checkout</h2>
+            <form action="post">
+
+                <fieldset>
+                    <legend class="basic-info"><span class="rounded-number">1</span> Your Basic Information </legend>
+                    <div class="personal-fields">
+                        <div class="input-box">
+                            <label for="first_name">First Name</label><br>
+                            <input type="text" id="first_name" name="first_name" placeholder="Jane" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="last_name">Last Name</label><br>
+                            <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="personal_email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="JaneDoe@example.com" required>
+                        </div>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend><span class="rounded-number">2</span>Your Payment Information</legend>
+                    <div class="payment-information">
+                        <div class="credit-card-fields">
+                            <label for="card_number">Card Number</label> <br>
+                            <div class="input-wrapper">
+                                <input type="text" id="card_number" name="card_number" placeholder="Card Number" required>
+                                <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+                                <input type="text" id="cvc" name="cvc" placeholder="CVC" required>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+        
+                <div class="center-button">
+                <button type="submit">Buy WP Pusher</button>
+                </div>
+            </form>
+
+            <div class="support">
+                <img src="./images/question.svg" alt="question mark">
+                <p><span class="bold">Need any help?</span> Don't hesitate to contact support!</p>
+            </div>
+
+            <img src="./images/powered_by_stripe.svg" alt="powered_by_stripe" class="stripe">
+        </div>
+    </main>
+</body>
+</html>
